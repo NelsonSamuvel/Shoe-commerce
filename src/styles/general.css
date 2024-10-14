@@ -1,0 +1,26 @@
+/* container */
+.mx-container {
+  @apply max-w-[1100px] mx-auto;
+}
+
+.sm-container {
+  @apply max-w-[760px] mx-auto;
+}
+
+/* typography */
+.h1 {
+  @apply text-3xl font-bold;
+}
+
+.h2 {
+  @apply text-2xl font-bold;
+}
+
+.h3 {
+  @apply text-xl font-bold;
+}
+
+/* icons */
+.icons {
+  @apply text-xl text-stone-600;
+}
