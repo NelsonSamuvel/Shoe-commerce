@@ -5,7 +5,7 @@ const Navbar = () => {
   return (
     <header>
       <div className="mx-container">
-        <nav className="flex items-center justify-between p-4">
+        <nav className="flex items-center justify-between p-4 gap-2">
           <Input />
           <Profile />
         </nav>

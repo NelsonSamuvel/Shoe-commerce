@@ -24,7 +24,7 @@ export const colors = [
 ];
 
 export const recommended = [
-  { name: "All Products", value: "all" },
+  { name: "All Products", value: "all-products" },
   { name: "Nike", value: "nike" },
   { name: "Adidas", value: "adidas" },
   { name: "Puma", value: "puma" },

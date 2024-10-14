@@ -9,7 +9,7 @@ const Recommended = () => {
     <section>
       <div className="mx-container py-4 px-12">
         <h2 className="h2 mb-4">Recommended</h2>
-        <ul className="flex gap-6 items-center">
+        <ul className="flex gap-6 flex-wrap items-center">
           {recommended.map((recommend) => (
             <li key={recommend.name}>
               <Button

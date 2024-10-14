@@ -3,9 +3,14 @@
   @apply max-w-[1100px] mx-auto;
 }
 
-.sm-container {
-  @apply max-w-[760px] mx-auto;
+.md-container {
+  @apply max-w-[900px] mx-auto;
 }
+
+.sm-container {
+  @apply max-w-[640px] mx-auto;
+}
+
 
 /* typography */
 .h1 {
