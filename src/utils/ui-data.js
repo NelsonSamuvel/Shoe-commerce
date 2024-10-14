@@ -22,3 +22,11 @@ export const colors = [
   { name: "White", value: "white" },
   { name: "Black $150", value: "black" },
 ];
+
+export const recommended = [
+  { name: "All Products", value: "all" },
+  { name: "Nike", value: "nike" },
+  { name: "Adidas", value: "adidas" },
+  { name: "Puma", value: "puma" },
+  { name: "Vans", value: "vans" },
+];

@@ -8,7 +8,7 @@ const App = () => {
     <section className="grid grid-cols-[150px_1fr] sm:grid-cols-[200px_1fr] grid-rows-[auto_1fr] min-h-screen">
       <SideBar />
       <Navbar />
-      <main>
+      <main className="">
         <Recommended />
         <Products />
       </main>
