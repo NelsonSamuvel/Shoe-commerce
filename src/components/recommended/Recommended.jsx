@@ -1,9 +1,11 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { recommended } from "../../utils/ui-data";
 import Button from "../ui/Button";
+import { FilterContext } from "../../context/FilterProvider";
 
 const Recommended = () => {
-  const [activeBtn, setActiveBtn] = useState(recommended[0].value);
+  const { recommend: activeRecommend, handleRecommend } =
+    useContext(FilterContext);
 
   return (
     <section>
@@ -14,8 +16,8 @@ const Recommended = () => {
             <li key={recommend.name}>
               <Button
                 type="secondary"
-                handleActiveBtn={() => setActiveBtn(recommend.value)}
-                isActive={activeBtn === recommend.value}
+                handleActiveBtn={() => handleRecommend(recommend.value)}
+                isActive={activeRecommend === recommend.value}
               >
                 {recommend.name}
               </Button>

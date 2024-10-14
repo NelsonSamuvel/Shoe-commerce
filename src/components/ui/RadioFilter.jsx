@@ -1,8 +1,5 @@
-import { useState } from "react";
-
 /* eslint-disable react/prop-types */
-const RadioFilter = ({ heading, filterData = [] }) => {
-  const [checkVal, setCheckVal] = useState(filterData[0].value);
+const RadioFilter = ({ heading, filterData = [],filterVal,handleFilter }) => {
 
   return (
     <div className="py-4">
@@ -15,8 +12,8 @@ const RadioFilter = ({ heading, filterData = [] }) => {
               id={item.value}
               name={heading.toLowerCase()}
               value={item.value}
-              checked={checkVal === item.value ? true : false}
-              onChange={(e) => setCheckVal(e.target.value)}
+              checked={filterVal === item.value ? true : false}
+              onChange={handleFilter}
               className="form-radio checked:bg-orange-700 focus:ring-1 focus:ring-orange-700 focus:text-orange-700 hover:text-orange-700"
             />
             <label htmlFor={item.value} className="cursor-pointer">
